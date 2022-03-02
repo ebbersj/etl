@@ -18,3 +18,5 @@ program
   .action((source, destination, opts) => ingest(source, destination, opts.config));
 
 program.parse();
+
+module.exports.ingest = ingest;
