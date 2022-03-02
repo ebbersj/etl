@@ -1,0 +1,43 @@
+{
+	"schema": {
+		"fields": [{
+				"source": ["Order Number"],
+				"type": "INTEGER",
+				"transforms": [
+					"PASSTHRU"
+				],
+				"target": "OrderID"
+			},
+			{
+				"source": ["Product Number"],
+				"type": "STRING",
+				"validation": "PRODUCTID",
+				"transforms": ["PASSTHRU"],
+				"target": "ProductId"
+
+			},
+			{
+				"source": ["Year", "Month", "Day"],
+				"transforms": ["DATEFROMPARTS", "PASSTHRU"],
+				"target": "OrderDate"
+			},
+			{
+				"source": ["Unit"],
+				"default": ["kg"],
+				"transforms": ["PASSTHRU"],
+				"target": "Unit"
+			},
+      {
+        "source": ["Count"],
+        "type": "FLOAT",
+        "target": "Quantity"
+      },
+      {
+        "source": ["Product Name"],
+        "transforms": ["PROPERCASE"],
+        "type": "STRING",
+        "target": "ProductName"
+      }
+		]
+	}
+}
