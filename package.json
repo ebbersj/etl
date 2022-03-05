@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "lab -t 90 -e development -v -m 5000 ./test"
   },
   "author": "",
   "license": "ISC",
@@ -12,5 +12,11 @@
     "commander": "^9.0.0",
     "csv": "^6.0.5",
     "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@hapi/lab": "^24.5.1",
+    "should": "^13.2.3",
+    "sinon": "^13.0.1",
+    "stream-mock": "^2.0.5"
   }
 }
