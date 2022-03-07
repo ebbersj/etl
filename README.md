@@ -1,7 +1,8 @@
+
 ## Crisp ETL Code Challenge
 
-This Application parses a file based on the config rules specified in the exercise utilizing a config file
--
+#### This Application parses a file based on the config rules specified in the exercise utilizing a config file
+
 ## Requirements
 
 * NodeJS 16
