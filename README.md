@@ -3,6 +3,10 @@
 
 #### This Application parses a file based on the config rules specified in the exercise utilizing a config file
 
+## Technical Write Up
+
+[Technical Write Up](WriteUp.docx)
+
 ## Requirements
 
 * NodeJS 16
